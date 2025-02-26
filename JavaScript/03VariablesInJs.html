@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables In JS</title>
+  </head>
+  <body>
+    <h1>Variables In JS</h1>
+    <p>Variables are like a Container, which stores Some Data.</p>
+    <p>Variables are of Three Types.(Two Types and One Constant)</p>
+    <ul>
+      <li>var</li>
+      <li>let</li>
+      <li>const</li>
+    </ul>
+
+    <h2>Rules For Creating Variables</h2>
+    <p>Must start with _, $, alpha</p>
+
+    <script>
+      // keyword name = data type
+
+      // ; => Semi-colon Represent the Ending of Line
+
+      // 1. var
+
+      //   var marks; // Declaration
+      //   marks = 80; // Assignment
+      var Ravi_marks = 80; // Initialization and Declaration.
+      var Ravi_marks = 90; // Re-Declaration is Possible.
+      Ravi_marks = 95; // Re-Assignment is Possible.
+
+      console.log(Ravi_marks);
+
+      //   var was used before ES6
+
+      //   2. let
+
+      // let was Introduce in ES6
+
+      let name = "Ravi choudhary is bad boy"; // Initialization and Declaration.
+      //   let name = "Ravi khichadiya"; // Re-Declaration is not Possible.
+      name = "Ravi choudhary is good boy"; // // Re-Assignment is Possible.
+      console.log(name);
+
+      //   3. const
+
+      const Arun_Fav_Actress = "Arun_Fav_Actress is Shardha Kapoor";
+      //   const Arun_Fav_Actress = "Arun_Fav_Actress is Nora Fatehi"; // Re-Declaration is not Possible
+    //   Arun_Fav_Actress = "Arun_Fav_Actress is Sonam Bajwa"; // Re-Assignment is not Possible.
+
+      console.log(Arun_Fav_Actress);
+
+
+
+
+    //   Rules 
+
+
+        let hello = 2;
+        let _hi = 4;
+        let $bye = 6;
+        // let 11bro = 8;   // SyntaxError
+
+
+        console.log(hello , _hi , $bye);
+        // console.log(11bro);
+        
+        
+    </script>
+  </body>
+</html>

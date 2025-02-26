@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types IN JS</title>
+</head>
+<body>
+    <h1>Data Types In JS</h1>
+    <p>We have Two Types Of Data Types</p>
+    <ol>
+        <li>Premitive Data Types</li>
+        <!-- NNSSBBU -->
+        <ul>
+            <li>Number</li>
+            <li>Null</li>
+            <li>Symbol</li>
+            <li>String</li>
+            <li>Boolean</li>
+            <li>BigInt</li>
+            <li>Undefined</li>
+        </ul>
+        <li>Non - Premitive Data Types</li>
+        <ul>
+            <li>Array</li>
+            <li>Object</li>
+            <!-- <li>Function</li> -->
+        </ul>
+    </ol>
+
+
+
+
+
+
+
+    <script>
+        // Data Types In JS 
+
+        // 1. Number 
+
+        let a = 10;
+        console.log(a);
+        console.log(typeof a);
+
+
+        // 2. Null
+        
+        let b = null;
+        // b = 10
+
+        console.log(b);
+        console.log(typeof b);
+        
+
+        // 3. Symbol 
+
+        let c = Symbol("hello")
+        console.log(c);
+        console.log(typeof c);
+
+
+
+        // 4. String 
+
+        // let d = "Hello Everyone";
+        // let d = 'Hello Everyone';
+        // let d = "Hello Everyone, This is 'Arun'";
+        // let d = 'Hello Everyone, This is "Arun"';
+        // let d = 'Hello Everyone, This is "Arun"';
+        let d = `Hello Everyone, This is 'Arun' and he play's "Football"`;
+
+        // Backtick ``, or Template Literals 
+
+
+        console.log(d);
+        console.log(typeof d);
+        
+
+        // 5. Boolean
+
+        let e = true;
+
+        console.log(e);
+        console.log(typeof e);
+        
+        
+        // 6. BigInt
+
+
+        let f = 656565656656n;
+        console.log(f);
+        console.log(typeof f);
+
+
+
+        // 7. Undefined
+
+        let g;            // varibale declared but value not Assigned
+        console.log(g); 
+        console.log(typeof g); 
+        
+        
+
+        // Question : What is The Difference Between Undefined and Not Defined?
+
+
+        // undefined => varibale declared but value not Assigned
+        // Not Defined => varibale is not declared         
+
+
+        console.log(h);   // Not Defined 
+        
+       
+    </script>
+</body>
+</html>
