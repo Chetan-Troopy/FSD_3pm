@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        code {
+            background: #e8e8e8;
+            padding: 3px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #333;
+        }
+        pre {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Basics</h1>
+        
+        <h2>1. Introduction to JavaScript</h2>
+        <p>JavaScript is a lightweight, interpreted programming language used to create dynamic and interactive web pages.</p>
+        
+        <h2>2. Ways to Apply JavaScript</h2>
+        <h3>Inline JavaScript</h3>
+        <pre><code>&lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;</code></pre>
+        
+        <h3>Internal JavaScript</h3>
+        <pre><code>&lt;script&gt;
+    document.write("Welcome to JavaScript!");
+&lt;/script&gt;</code></pre>
+        
+        <h3>External JavaScript</h3>
+        <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+        
+        <h2>3. Variables in JavaScript</h2>
+        <p>Variables in JavaScript are used to store data values. They can be declared using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+        <pre><code>var name = "Alice"; // Can be redeclared
+let age = 25; // Block-scoped
+const country = "USA"; // Immutable</code></pre>
+        
+        <h2>4. Introduction to Data Types</h2>
+        <ul>
+            <li>String: <code>"Hello"</code></li>
+            <li>Number: <code>100</code>, <code>3.14</code></li>
+            <li>Boolean: <code>true</code>, <code>false</code></li>
+            <li>Undefined: A declared variable without a value</li>
+            <li>Null: A variable with an empty value</li>
+            <li>Symbol: Unique and immutable values</li>
+            <li>BigInt: For very large numbers</li>
+            <li>Object: <code>{name: "John", age: 25}</code></li>
+            <li>Array: <code>["apple", "banana", "mango"]</code></li>
+        </ul>
+        
+        <h2>5. JavaScript Interview Questions</h2>
+        <ol>
+            <li>What is JavaScript?</li>
+            <li>How do you declare variables in JavaScript?</li>
+            <li>What are the different data types in JavaScript?</li>
+            <li>What is the difference between <code>null</code> and <code>undefined</code>?</li>
+            <li>How do you check the type of a variable?</li>
+            <li>What are the ways to include JavaScript in a webpage?</li>
+            <li>What are the scopes of variables in JavaScript?</li>
+            <li>What is the difference between <code>var</code>, <code>let</code>, and <code>const</code>?</li>
+            <li>What is type coercion in JavaScript?</li>
+            <li>How do you declare a constant in JavaScript?</li>
+            <li>What is a template literal in JavaScript?</li>
+            <li>Explain the difference between primitive and reference data types.</li>
+            <li>How do you define an array in JavaScript?</li>
+            <li>What is the purpose of the <code>typeof</code> operator?</li>
+            <li>How do you check if a variable is <code>null</code> or <code>undefined</code>?</li>
+            <li>How can you convert a string to a number in JavaScript?</li>
+            <li>How do you check if a variable is an array?</li>
+            <li>What is the significance of the <code>BigInt</code> data type?</li>
+            <li>Explain the concept of immutability in <code>const</code> variables.</li>
+        </ol>
+        
+        <h2>6. JavaScript Practical Tasks</h2>
+        <ul>
+            <li>Declare a variable and assign a string value.</li>
+            <li>Declare a variable and assign a number value.</li>
+            <li>Declare a variable and assign a boolean value.</li>
+            <li>Declare a variable without assigning a value and check its type.</li>
+            <li>Assign <code>null</code> to a variable and check its type.</li>
+            <li>Create an object representing a person with properties like name, age, and city.</li>
+            <li>Declare an array with at least five different fruit names.</li>
+            <li>Access and modify a value in an array.</li>
+            <li>Check if a variable is of type <code>number</code> using <code>typeof</code>.</li>
+            <li>Convert a number to a string.</li>
+            <li>Convert a string to a number.</li>
+            <li>Declare a constant variable and try reassigning a value to see what happens.</li>
+            <li>Check the difference between <code>null</code> and <code>undefined</code>.</li>
+            <li>Create a <code>BigInt</code> variable and log its value.</li>
+            <li>Declare a symbol and use it as a property key in an object.</li>
+            <li>Write a JavaScript statement that outputs text in the console.</li>
+            <li>Create a template literal that includes a variable inside a string.</li>
+            <li>Use <code>typeof</code> to check the type of different values.</li>
+            <li>Compare <code>==</code> and <code>===</code> when checking variable equality.</li>
+        </ul>
+    </div>
+</body>
+</html>
