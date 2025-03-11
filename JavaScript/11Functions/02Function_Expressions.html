@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Expressions</title>
+  </head>
+  <body>
+    <h1>Function Expressions</h1>
+
+    <script>
+      // Normal Function
+
+      greet();
+
+      function greet() {
+        console.log("Namaste Bharat");
+      }
+
+      // Function Expressions
+
+      //   greetExp()   // This is Wrong because of Hoisting In JavaScript
+
+      const greetExp = function () {
+        console.log("Namaste Bharat");
+      };
+
+      greetExp();
+    </script>
+  </body>
+</html>
+
+
+
+<!-- Upcoming Lecture  -->
+
+<!-- 
+
+1. IIFE (Imediatly Invocked Function)
+2. Arrow Function 
+3. Closures In JS (Scope in JS) 
+4. Higher Order Function (Map, Filter, Reduce)
+
+
+-->

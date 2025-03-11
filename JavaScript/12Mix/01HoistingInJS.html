@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Hoisting</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        padding: 20px;
+        background-color: violet;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #007bff;
+      }
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        line-height: 1.6;
+      }
+      ul {
+        margin-left: 20px;
+      }
+      .highlight {
+        background: #eef4ff;
+        padding: 10px;
+        border-left: 5px solid #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Understanding Hoisting in JavaScript</h1>
+      <p>
+        Hoisting is a JavaScript feature that moves variable, function, and
+        class declarations to the top of their scope before code execution. This
+        allows you to use these declarations before they are defined.
+      </p>
+
+      <h2>How Does Hoisting Work?</h2>
+      <p>
+        During the compilation phase, the JavaScript interpreter moves variable
+        declarations to the top of their scope. This means that variables are
+        available to use even if they are declared later in the code.
+      </p>
+
+      <div class="highlight">
+        <p><strong>Example:</strong></p>
+        <code>
+          console.log(a); // undefined<br />
+          var a = 10;
+        </code>
+      </div>
+
+      <h2>Caveats of Hoisting</h2>
+      <ul>
+        <li>
+          Calling a function before it is assigned will result in an error.
+        </li>
+        <li>Arrow functions are not hoisted and must be defined before use.</li>
+        <li>
+          Strict mode in ES5 prevents using variables before they are declared.
+        </li>
+      </ul>
+
+      <h2>Benefits of Hoisting</h2>
+      <p>
+        Hoisting is a built-in behavior of JavaScript that helps in writing more
+        consistent code and avoids unpredictable behavior.
+      </p>
+    </div>
+
+    <!-- JavaScript  -->
+
+    <script>
+      a = 10; // Variable Assignment
+      console.log(a);
+      var a; // Variable Declaration
+
+      //   let and const are not Hoisted
+
+      //   Variable Declaration are Hoisted but Variable Assignement is Not Hoisted ;
+
+      //   Normal Function => They are Hoisted
+
+      greet();
+
+      function greet() {
+        console.log("Hello");
+      }
+
+      //   Function Expression => They are Not Hoisted 
+
+      greetExp();    // This is Wrong 
+
+      const greetExp = function () {
+        console.log("Hi");
+      };
+    </script>
+  </body>
+</html>
