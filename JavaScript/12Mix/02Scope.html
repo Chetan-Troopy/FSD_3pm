@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope In JS</title>
+  </head>
+  <body>
+    <h1>Scope In JS</h1>
+    <p>
+      The scope is the current context of execution in which values and
+      expressions are "visible" or can be referenced.
+    </p>
+    <p>
+      If a variable or expression is not in the current scope, it will not be
+      available for use.
+    </p>
+    <p>
+      Scopes can also be layered in a hierarchy, so that child scopes have
+      access to parent scopes, but not vice versa.
+    </p>
+
+    <h2>Genrally There are Two Types Of Scope</h2>
+    <ol>
+      <li>Global Scope</li>
+      <li>Block Scope</li>
+    </ol>
+
+    <script>
+      // Scope In JS
+
+      // 1. Global Scope
+
+      let a = 10;
+
+      function checkGlobal() {
+        console.log(a);
+      }
+
+      checkGlobal();
+
+      // 2. Block Scope
+
+      // Block => {}
+
+      function checkBlock() {
+        let b = 10;
+      }
+      checkBlock();
+
+      console.log(b);
+    </script>
+  </body>
+</html>

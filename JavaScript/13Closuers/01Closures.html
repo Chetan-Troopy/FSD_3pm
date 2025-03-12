@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures In JS</title>
+  </head>
+  <body>
+    <h1>Closures In JS</h1>
+    <p>Nested Function are Closures.</p>
+    <p>
+      A function Bundled Together with its Lexical Environment makes a Closure.
+    </p>
+    <img src="../../Images/closure.png" width="80%" alt="" />
+
+    <script>
+      // Closures In JS
+
+      function outerOuter(params) {
+        let b = 20;
+        function outer() {
+          let a = 10;
+          console.log(b);
+          function Inner() {
+            console.log(a);
+          }
+          Inner();
+        }
+        outer();
+      }
+      outerOuter();
+    </script>
+  </body>
+</html>
