@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying Element</title>
+
+
+    <!-- Internal CSS  -->
+
+    <style>
+        .same{
+            border: 2px solid lime;
+            color: aliceblue;
+            background-color: crimson;
+            padding: 20px;
+        }
+        .hey{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+        }
+        button{
+            color: aliceblue;
+            background-color: blue;
+            border: 1px solid blue;
+            padding: 10px 30px;
+        }
+        .dark{
+            background-color: black;
+            color: aliceblue;
+        }
+        .light{
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
+  </head>
+  <body id="body">
+    <h1>Modifying Element</h1>
+    <button id="btn">Theme Toggle</button>
+    <hr />
+
+    <div id="parent" name="same" class="hey">
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque?
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque?
+      </p>
+      <div id="child"></div>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque?
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque?
+      </p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque?
+      </p>
+    </div>
+
+    <script>
+      // Modifying Element
+
+      let child = document.getElementById("child");
+      let parent = document.getElementById("parent");
+
+        child.innerHTML = "<b>Namaste Bharat</b>"
+      //   child.innerText = "<b>Namaste Bharat</b>"
+      //   child.outerHTML = "<b>Namaste Bharat</b>"
+      //   child.textContent = "<b>Namaste Bharat</b>"
+
+
+        // parent.style.backgroundColor = "gray"
+        // parent.style.padding = "20px"
+
+
+
+        // console.log(parent.getAttribute("id"));
+        // console.log(parent.getAttribute("name"));
+
+
+
+
+        
+        // child.setAttribute("class", "same")
+
+
+        // console.log(parent.hasAttribute("id"));
+        // console.log(parent.hasAttribute("class"));
+
+
+
+        // parent.removeAttribute("class")
+
+
+
+
+        let body = document.getElementById("body")
+
+        // body.classList.add("dark")
+        // body.classList.remove("dark")
+        // body.classList.toggle("dark")
+        
+        
+        
+        
+        btn.addEventListener("click", function () {
+            body.classList.toggle("dark")
+        })
+
+
+    </script>
+  </body>
+</html>

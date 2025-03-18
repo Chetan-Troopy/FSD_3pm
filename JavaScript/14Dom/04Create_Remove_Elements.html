@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Remove Element</title>
+</head>
+<body>
+    <h1>Create Remove Element</h1>
+
+    <hr>
+
+
+    <div id="parent">
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consequatur.</p>
+    </div>
+
+    <script>
+        // Create Remove Element
+
+        let parent = document.getElementById("parent")
+        let para = document.getElementById("para")
+
+        let h2 = document.createElement("h2")
+        console.log(h2);
+
+        let text = document.createTextNode("Hello World!")
+        console.log(text);
+
+        h2.appendChild(text)
+
+
+        // parent.appendChild(h2)
+        // parent.removeChild(para)
+
+
+        parent.replaceChild(h2, para)
+
+
+
+        
+        
+    </script>
+</body>
+</html>
