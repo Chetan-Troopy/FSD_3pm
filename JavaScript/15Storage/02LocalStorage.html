@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storge</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-white">
+    <h1>Local Storge</h1>
+
+    <hr />
+
+    <div class="container bg-warning text-dark p-5">
+      <!-- <form> -->
+        <label for="" class="fs-2 fw-bold">User Name : </label>
+        <input type="text" name="uname" id="uname" class="form-control w-50" />
+        <br /><br />
+        <button class="btn btn-primary" id="btn">Submit</button>
+      <!-- </form> -->
+
+      <h3 class="pt-5 h1">User Name : <span id="spnId"></span></h3>
+    </div>
+    <script>
+      // Local Storge
+
+      // localStorage.setItem()
+      // localStorage.getItem()
+      // localStorage.removeItem()
+    //   localStorage.clear()
+
+      
+      
+      btn.addEventListener("click", function () {
+          let uname = document.getElementById("uname").value;
+          localStorage.setItem("detail", uname);
+
+        //   let getValue = localStorage.getItem("detail")
+        
+          document.getElementById("spnId").innerText = localStorage.getItem("detail")
+      })
+    </script>
+  </body>
+</html>
