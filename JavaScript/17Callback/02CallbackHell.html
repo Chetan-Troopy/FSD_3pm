@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Hell</title>
+  </head>
+  <body>
+    <h1>Callback Hell</h1>
+
+    <p>
+      Callback hell is a programming issue that occurs when multiple callbacks
+      are nested within a function. This makes the code difficult to read,
+      maintain, and debug. It's also known as the "pyramid of doom" because the
+      code structure resembles a pyramid.
+    </p>
+
+    <h2>Pyramid of Doom</h2>
+    <p>
+      In programming, the "pyramid of doom" refers to a code structure with
+      excessive nesting of conditional statements or callbacks, making it
+      difficult to read, maintain, and debug. It's often seen in languages like
+      JavaScript due to its asynchronous nature and handling of callbacks.
+    </p>
+
+    <img src="../../Images/calbackhell.jfif" width="50%" alt="">
+
+    <script>
+      product.addEventListener("click", function () {
+        wishlist.addEventListener("click", function (product) {
+          addToCart.addEventListener("click", function (product) {
+            placeOrder.addEventListener("click", function (product) {
+              payment.addEventListener("click", function (product) {
+                success.addEventListener("click", function (product) {});
+              });
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
