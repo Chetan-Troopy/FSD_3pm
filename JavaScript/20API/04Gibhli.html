@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API In JavaScript</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        body{
+            background-color: violet;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border: 5px solid lime;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>API</h1>
+    <p>
+      An API, or Application Programming Interface, is a set of rules and tools
+      that allows different softwa
+    </p>
+
+    <hr>
+    <div class="box">
+
+        <img src="" id="img" alt="">
+        
+    </div>
+
+
+    <script>
+        //  let count = 1;
+      async function getProducts() {
+        try {
+          const ApiData = await fetch(
+            `https://ghibliapi.vercel.app/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49`
+          );
+          console.log(ApiData);
+          const data = await ApiData.json();
+          console.log(data);
+
+          document.getElementById("img").src = data.message
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+    //   function nextProduct() {
+    //     count++;
+    //     getProducts();
+    //   }
+      getProducts();
+    </script>
+  </body>
+</html>

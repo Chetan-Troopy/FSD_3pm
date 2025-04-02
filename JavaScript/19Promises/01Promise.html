@@ -21,7 +21,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-dark text-light">
     <h1>Promise In JavaScript</h1>
     <p>
       A promise in JavaScript is an object representing the eventual result of
@@ -52,7 +52,8 @@
     </ul>
 
     <hr />
-    <div id="dispData" class="container text-center"></div>
+    <button onclick="nextProduct()" class="btn btn-success">Next Product</button>
+    <div id="dispData" class="container text-center text-light bg-dark"></div>
 
     <script>
       // shyncronus Operation
@@ -83,20 +84,22 @@
       //     .catch((err) => {
       //       console.log(err);
       //     });
-
+      let count = 1;
       async function getProducts() {
         try {
-          const ApiData = await fetch("https://fakestoreapi.com/products/1");
+          const ApiData = await fetch(
+            `https://fakestoreapi.com/products/${count}`
+          );
           console.log(ApiData);
           const data = await ApiData.json();
           console.log(data);
 
           document.getElementById("dispData").innerHTML = `
-        <div class="card text-center" style="width: 15rem;">
+        <div class="card text-center text-light bg-danger" style="width: 15rem;">
             <img src=${data.image} class="card-img-top w-50 m-auto"  alt="...">
             <div class="card-body">
-                <h5 class="card-title">${data.title}</h5>
-                <p class="card-text">${data.description}</p>
+                <h5 class="card-title text-light">${data.title}</h5>
+                <p class="card-text text-light">${data.description}</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
                 </div>
@@ -107,7 +110,12 @@
         }
       }
 
+      function nextProduct() {
+        count++;
+        getProducts();
+      }
       getProducts();
+
     </script>
   </body>
 </html>
