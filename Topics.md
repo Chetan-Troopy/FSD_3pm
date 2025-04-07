@@ -1,21 +1,18 @@
-<!-- # Storage -> Local Storage, Session Storage, Cookies -->
 
-
-
-# Destructing of Array
-# Destructing of Object
-# Rest and Spread Operator
-# Call, Apply , Bind
-# Modules
-# use - Strict
+<!-- # Destructing of Array -->
+<!-- # Destructing of Object -->
+<!-- # Rest and Spread Operator -->
+<!-- # Call, Apply , Bind -->
+<!-- # Modules -> Import and Export -->
 
 
 
 
-# Closures
-# HOF - Map, filter, reduce
-# callback
-# Promises
-# Asyn/ Await
-# API
-# OOPs
+<!-- OOPs -> No use in React as Class based Components are Removed From React -->
+
+
+
+<!-- React -->
+
+<!-- -> Install Node js  -->
+
