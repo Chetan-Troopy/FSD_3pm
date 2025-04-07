@@ -63,32 +63,37 @@ my-app/
 
 > Lists files/folders that Git should ignore (e.g., node_modules, dist).
 
-📄 index.html
-The HTML template used by Vite.
+### 📄 index.html
 
-It contains a root <div id="root"></div> where your React app mounts.
+> The HTML template used by Vite.
 
-Unlike Create React App, you can fully edit this file in Vite.
+> It contains a root <div id="root"></div> where your React app mounts.
 
-📄 package.json
-Contains app info, scripts (like dev, build), and dependencies.
+> Unlike Create React App, you can fully edit this file in Vite.
 
-Use this file to manage npm packages and metadata.
+### 📄 package.json
 
-📄 vite.config.js
-Vite’s configuration file.
+> Contains app info, scripts (like dev, build), and dependencies.
 
-You can customize things like aliases, plugins, build settings, etc.
+> Use this file to manage npm packages and metadata.
 
-📄 README.md
-A markdown file usually containing project setup instructions or documentation.
+### 📄 vite.config.js
 
-💡 Summary
-Folder/File	Purpose
-src/	Your main React code lives here
-public/	Static assets (images, etc.)
-index.html	Main HTML template
-main.jsx	Entry point, renders React app
-App.jsx	Main component
-vite.config.js	Vite configuration settings
-package.json	Project metadata and dependencies
+> Vite’s configuration file.
+
+> You can customize things like aliases, plugins, build settings, etc.
+
+### 📄 README.md
+
+> A markdown file usually containing project setup instructions or documentation.
+
+## 💡 Summary
+
+> Folder/File	Purpose
+> src/	Your main React code lives here
+> public/	Static assets (images, etc.)
+> index.html	Main HTML template
+> main.jsx	Entry point, renders React app
+> App.jsx	Main component
+> vite.config.js	Vite configuration settings
+> package.json	Project metadata and dependencies
