@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map, Filter, Reduce - 20 Practical Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+   
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1{
+        color: #fff;
+    } 
+    h2 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #ecf0f1;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-left: 5px solid #3498db;
+      border-radius: 5px;
+    }
+    .category {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>20 Practical Tasks Using Map, Filter, and Reduce</h1>
+  </header>
+  <main>
+    <section class="category">
+      <h2>🔁 Map Tasks</h2>
+      <ul>
+        <li><strong>Convert Celsius to Fahrenheit</strong><br>Given an array of Celsius temperatures, use map to convert them to Fahrenheit.</li>
+        <li><strong>Capitalize First Letter</strong><br>Convert an array of lowercase strings to capitalized format (e.g., ["apple"] → ["Apple"]).</li>
+        <li><strong>Extract Usernames</strong><br>Given an array of user objects, extract only the usernames into a new array.</li>
+        <li><strong>Double the Numbers</strong><br>Given an array of numbers, return a new array with all numbers doubled.</li>
+        <li><strong>Append Index</strong><br>Add the index position to each string (e.g., ["car", "bike"] → ["car0", "bike1"]).</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>🚫 Filter Tasks</h2>
+      <ul>
+        <li><strong>Filter Even Numbers</strong><br>Return only the even numbers from an array.</li>
+        <li><strong>Filter Adults</strong><br>Given an array of objects with age, filter out people who are 18 or older.</li>
+        <li><strong>Remove Falsy Values</strong><br>Filter out all falsy values (false, 0, null, undefined, NaN, "") from an array.</li>
+        <li><strong>Words Longer Than 5</strong><br>Given an array of strings, return words with length > 5.</li>
+        <li><strong>Filter Prime Numbers</strong><br>From a given array, return only the prime numbers.</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>➕ Reduce Tasks</h2>
+      <ul>
+        <li><strong>Sum of All Numbers</strong><br>Return the sum of all numbers in an array.</li>
+        <li><strong>Find Maximum Number</strong><br>Use reduce to find the maximum value in a numeric array.</li>
+        <li><strong>Flatten an Array</strong><br>Flatten a nested array like [[1, 2], [3, 4]] → [1, 2, 3, 4].</li>
+        <li><strong>Count Occurrences</strong><br>Count how many times each element appears in an array.</li>
+        <li><strong>Concatenate Strings</strong><br>Combine an array of strings into a single sentence.</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h2>🔁🧠 Combination Tasks (Map + Filter + Reduce)</h2>
+      <ul>
+        <li><strong>Square and Filter Odds</strong><br>Square each number using map, then use filter to keep only odd squares.</li>
+        <li><strong>Total Price with Tax</strong><br>Given an array of product prices, add 18% tax using map, then reduce to find the total.</li>
+        <li><strong>Unique Values</strong><br>Use reduce to create an array of unique values from a list (without using Set).</li>
+        <li><strong>Find Average Age</strong><br>Given a list of user objects with age, calculate the average age.</li>
+        <li><strong>Word Frequency Counter</strong><br>Given a string, split into words, and use reduce to count occurrences of each word.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
