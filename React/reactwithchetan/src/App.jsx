@@ -3,6 +3,8 @@ import UnderstandingOfJsx from "./component/foundation_of_react/UnderstandingOfJ
 import UnderStandingOfComponents from "./component/foundation_of_react/UnderStandingOfComponents";
 import UnderStandingOfProps from "./component/foundation_of_react/props/UnderStandingOfProps";
 import ExternalCSS from "./component/foundation_of_react/CSSInReact/ExternalCSS";
+import EventCompo from "./component/foundation_of_react/EventHandling/EventCompo";
+import ConditionalCompo from "./component/foundation_of_react/ConditionalRendering/ConditionalCompo";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
           <li>
             <ExternalCSS />
           </li>
+          <hr />
+          <li><EventCompo/> </li>
+          <hr />
+          <li><ConditionalCompo/> </li>
         </ol>
       </div>
       <br />

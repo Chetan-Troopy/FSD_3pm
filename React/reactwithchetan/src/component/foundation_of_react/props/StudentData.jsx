@@ -5,6 +5,8 @@ function StudentData(props) {
   return (
     <>
         <table border={1}>
+            <tbody>
+
             <tr>
                 <th>Student Name</th>
                 <td>{props.name}</td>
@@ -21,6 +23,7 @@ function StudentData(props) {
                 <th>Student Email</th>
                 <td>{props.email}</td>
             </tr>
+            </tbody>
         </table>
     
     </>

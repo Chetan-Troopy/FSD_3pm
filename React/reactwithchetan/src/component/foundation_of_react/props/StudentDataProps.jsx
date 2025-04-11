@@ -5,6 +5,8 @@ function StudentDataProps({name, age, phone, email}) {
   return (
     <>
         <table border={1}>
+            <tbody>
+
             <tr>
                 <th>Student Name</th>
                 <td>{name}</td>
@@ -21,6 +23,7 @@ function StudentDataProps({name, age, phone, email}) {
                 <th>Student Email</th>
                 <td>{email}</td>
             </tr>
+            </tbody>
         </table>
     
     </>
