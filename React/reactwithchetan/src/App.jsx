@@ -5,6 +5,7 @@ import UnderStandingOfProps from "./component/foundation_of_react/props/UnderSta
 import ExternalCSS from "./component/foundation_of_react/CSSInReact/ExternalCSS";
 import EventCompo from "./component/foundation_of_react/EventHandling/EventCompo";
 import ConditionalCompo from "./component/foundation_of_react/ConditionalRendering/ConditionalCompo";
+import ListCompo from "./component/foundation_of_react/RenderingList/ListCompo";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           <li><EventCompo/> </li>
           <hr />
           <li><ConditionalCompo/> </li>
+          <hr />
+          <li><ListCompo/></li>
         </ol>
       </div>
       <br />
