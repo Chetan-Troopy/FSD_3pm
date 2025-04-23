@@ -7,6 +7,7 @@ function HooksMenu() {
          <div className="container">
             <ul>
                 <li><Link to="explainUseState" className='text-dark text-decoration-none'>UseState Hook</Link></li>
+                <li><Link to="explainUseEffectHook" className='text-dark text-decoration-none'>UseEffect Hook</Link></li>
             </ul>
 
 

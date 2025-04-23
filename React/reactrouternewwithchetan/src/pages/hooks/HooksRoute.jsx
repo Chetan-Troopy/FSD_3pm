@@ -2,6 +2,7 @@ import React from 'react'
 import HooksMenu from './HooksMenu';
 import ExplainUseState from './UseStateHook/ExplainUseState';
 import { useRoutes } from 'react-router';
+import ExplainUseEffectHook from './useEffectHook/ExplainUseEffectHook';
 
 function HooksRoute() {
     const routes = useRoutes([
@@ -12,6 +13,10 @@ function HooksRoute() {
             {
               path: "explainUseState",
               element: <ExplainUseState />,
+            },
+            {
+              path: "explainUseEffectHook",
+              element: <ExplainUseEffectHook />,
             },
           
           ],
