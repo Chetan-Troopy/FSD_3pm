@@ -3,6 +3,7 @@ import HooksMenu from './HooksMenu';
 import ExplainUseState from './UseStateHook/ExplainUseState';
 import { useRoutes } from 'react-router';
 import ExplainUseEffectHook from './useEffectHook/ExplainUseEffectHook';
+import ExplainUseReducerHook from './useReducerHook/ExplainUseReducerHook';
 
 function HooksRoute() {
     const routes = useRoutes([
@@ -17,6 +18,10 @@ function HooksRoute() {
             {
               path: "explainUseEffectHook",
               element: <ExplainUseEffectHook />,
+            },
+            {
+              path: "explainUseReducerHook",
+              element: <ExplainUseReducerHook />,
             },
           
           ],

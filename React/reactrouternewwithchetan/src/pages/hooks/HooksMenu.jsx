@@ -8,6 +8,7 @@ function HooksMenu() {
             <ul>
                 <li><Link to="explainUseState" className='text-dark text-decoration-none'>UseState Hook</Link></li>
                 <li><Link to="explainUseEffectHook" className='text-dark text-decoration-none'>UseEffect Hook</Link></li>
+                <li><Link to="explainUseReducerHook" className='text-dark text-decoration-none'>UseReducer Hook</Link></li>
             </ul>
 
 
