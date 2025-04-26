@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import ExampleCompo from "../example/ExampleCompo";
 import FundamentalsRoutes from "../pages/fundamentals/FundamentalsRoute";
 import HooksRoute from "../pages/hooks/HooksRoute";
+import ProjectRoute from "../pages/Projects/ProjectRoute";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         {
             path: "hooks/*",
             element: <HooksRoute/>
+        },
+        {
+            path: "project/*",
+            element: <ProjectRoute/>
         },
     ]
   },
