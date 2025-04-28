@@ -6,9 +6,10 @@ function HooksMenu() {
     <>
          <div className="container">
             <ul>
-                <li><Link to="explainUseState" className='text-dark text-decoration-none'>UseState Hook</Link></li>
-                <li><Link to="explainUseEffectHook" className='text-dark text-decoration-none'>UseEffect Hook</Link></li>
-                <li><Link to="explainUseReducerHook" className='text-dark text-decoration-none'>UseReducer Hook</Link></li>
+                <li><Link to="explainUseState" className='text-dark text-decoration-none'>useState Hook</Link></li>
+                <li><Link to="explainUseEffectHook" className='text-dark text-decoration-none'>useEffect Hook</Link></li>
+                <li><Link to="explainUseReducerHook" className='text-dark text-decoration-none'>useReducer Hook</Link></li>
+                <li><Link to="explainUseRef" className='text-dark text-decoration-none'>useRef Hook</Link></li>
             </ul>
 
 
