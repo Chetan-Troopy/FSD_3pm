@@ -28,12 +28,11 @@ function ExplainUseRef() {
 
         <h2 className="py-3">Examples</h2>
         <div className="border border-3 border-danger-subtle p-4">
-            <FocusInput/>
+          <FocusInput />
         </div>
         <div className="border border-3 border-danger-subtle p-4">
-            <PreviousValueCompo/>
+          <PreviousValueCompo />
         </div>
-      
       </div>
     </>
   );
