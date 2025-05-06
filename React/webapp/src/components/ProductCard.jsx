@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
+import { useCart } from "../context/CartContext";
 
 function ProductCard({ product }) {
+
+  const{addToCart}  = useCart()
+
+
   return (
     <>
       <div className="col" key={product.id}>
@@ -15,7 +20,7 @@ function ProductCard({ product }) {
             <h5 className="card-title">{product.title.slice(0, 30)}</h5>
             <p className="card-text">{product.description.slice(0, 60)}</p>
             <p className="card-text">₹ {product.price}</p>
-            <Link to="#" className="btn btn-primary">
+            <Link to="#" className="btn btn-primary" onClick={() => addToCart(product)}>
               Add To Cart
             </Link>
           </div>
