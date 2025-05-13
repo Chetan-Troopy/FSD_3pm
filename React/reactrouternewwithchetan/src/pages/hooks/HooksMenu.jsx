@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router'
+import { motion } from 'framer-motion'
+
 
 function HooksMenu() {
   return (
     <>
-         <div className="container">
+         <motion.div layoutId="underline" className="container">
             <ul>
                 <li><Link to="explainUseState" className='text-dark text-decoration-none'>useState Hook</Link></li>
                 <li><Link to="explainUseEffectHook" className='text-dark text-decoration-none'>useEffect Hook</Link></li>
@@ -20,7 +22,7 @@ function HooksMenu() {
                     <Outlet/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     
     </>
   )
