@@ -13,6 +13,7 @@ function HooksMenu() {
                 <li><Link to="explainUseReducerHook" className='text-dark text-decoration-none'>useReducer Hook</Link></li>
                 <li><Link to="explainUseRef" className='text-dark text-decoration-none'>useRef Hook</Link></li>
                 <li><Link to="explainUseContext" className='text-dark text-decoration-none'>useContext Hook</Link></li>
+                <li><Link to="explanationMemoCallback" className='text-dark text-decoration-none'>useMemo & useCallback Hook</Link></li>
             </ul>
 
 
